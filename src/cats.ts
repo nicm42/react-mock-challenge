@@ -70,3 +70,5 @@ const CATS = [
     age: 6,
   },
 ];
+
+export default CATS;
