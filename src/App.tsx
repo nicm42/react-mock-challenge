@@ -1,14 +1,15 @@
 import Card from './components/Card';
 import cats from './cats';
+import { exampleStyle } from './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div className={exampleStyle}>
       {cats.map((cat) => (
         <Card Cat={cat} key={cat.name} />
       ))}
     </div>
   );
-}
+};
 
 export default App;
