@@ -1,4 +1,12 @@
-import { cardStyle, cardInfo } from './Card.css';
+import {
+  cardStyle,
+  cardImage,
+  cardText,
+  cardName,
+  cardInfo,
+  cardBreed,
+  cardAge,
+} from './Card.css';
 
 interface Cat {
   name: string;
@@ -15,14 +23,15 @@ interface CatProps {
 const Card = ({ Cat }: CatProps) => {
   return (
     <div className={cardStyle}>
-      <img className="card-image" src={Cat.url} alt={Cat.description} />
-      <div className={cardInfo}>
-        <div className="card-name">{Cat.name}</div>
-        <div className="card-breed">{Cat.breed}</div>
-        <div className="card-age">
+      <img className={cardImage} src={Cat.url} alt={Cat.description} />
+      <div className={cardText}>
+        <h2 className={cardName}>{Cat.name}</h2>
+        <ul className={cardInfo}>
+          <li className={cardBreed}>{Cat.breed}</li>
+          <li className={cardAge}></li>
           {Cat.age} {Cat.age === 1 ? ' year' : 'years'}
-        </div>
-        <div className="card-description">{Cat.description}</div>
+        </ul>
+        <p className="card-description">{Cat.description}</p>
       </div>
     </div>
   );
