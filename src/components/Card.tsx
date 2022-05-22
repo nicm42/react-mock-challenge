@@ -13,9 +13,12 @@ interface CatProps {
 const Card = ({ Cat }: CatProps) => {
   return (
     <div className="card">
+      <img className="card-image" src={Cat.url} alt={Cat.description} />
       <div className="card-name">{Cat.name}</div>
       <div className="card-breed">{Cat.breed}</div>
-      <div className="card-age">{Cat.age}</div>
+      <div className="card-age">
+        {Cat.age} {Cat.age === 1 ? ' year' : 'years'}
+      </div>
       <div className="card-description">{Cat.description}</div>
     </div>
   );
