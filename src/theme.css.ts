@@ -8,6 +8,8 @@ export const [appTheme, vars] = createTheme({
     background: '#fcf3cf',
   },
   fonts: {
-    main: 'sans-serif',
+    main: 'Ubuntu',
+    accent: 'Shadows Into Light',
+    lineHeight: '1.2',
   },
 });

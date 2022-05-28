@@ -17,7 +17,9 @@ export const cardText = style({
 });
 
 export const cardName = style({
-  fontSize: '1.2rem',
+  fontFamily: vars.fonts.accent,
+  fontSize: '1.5rem',
+  lineHeight: '1',
   color: vars.colours.accent,
 });
 
