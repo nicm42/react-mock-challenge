@@ -1,6 +1,8 @@
 import { style } from '@vanilla-extract/css';
+import { vars } from '../theme.css';
 
 export const cardStyle = style({
+  backgroundColor: vars.colours.white,
   border: '1px solid black',
 });
 
@@ -16,6 +18,7 @@ export const cardText = style({
 
 export const cardName = style({
   fontSize: '1.2rem',
+  color: vars.colours.accent,
 });
 
 export const cardInfo = style({
