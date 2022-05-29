@@ -5,15 +5,11 @@ import {
 } from '@vanilla-extract/css';
 
 globalFontFace('Ubuntu', {
-  fontStyle: 'normal',
-  fontWeight: 400,
-  src: 'url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap)',
+  src: 'url(./fonts/Ubuntu-Regular.ttf)',
 });
 
 globalFontFace('ShadowsIntoLight', {
-  fontStyle: 'normal',
-  fontWeight: 400,
-  src: 'url(https://fonts.googleapis.com/css2?family=Shadows+Into+Light:wght@400&display=swap)',
+  src: 'url(./fonts/ShadowsIntoLightTwo-Regular.ttf)',
 });
 
 export const vars = createGlobalTheme(':root', {
@@ -29,8 +25,6 @@ export const vars = createGlobalTheme(':root', {
     lineHeight: '1.2',
   },
 });
-
-/* TODO why is it ignoring the fonts? - because they need to be downloaded */
 
 globalStyle('body', {
   fontFamily: vars.font.main,
