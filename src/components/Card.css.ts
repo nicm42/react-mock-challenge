@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 import { vars } from '../theme.css';
 
 export const cardStyle = style({
-  backgroundColor: vars.colours.white,
+  backgroundColor: vars.colour.white,
   border: '1px solid black',
 });
 
@@ -17,10 +17,10 @@ export const cardText = style({
 });
 
 export const cardName = style({
-  fontFamily: vars.fonts.accent,
+  fontFamily: vars.font.accent,
   fontSize: '1.5rem',
   lineHeight: '1',
-  color: vars.colours.accent,
+  color: vars.colour.accent,
 });
 
 export const cardInfo = style({
