@@ -10,6 +10,7 @@ globalFontFace('ShadowsIntoLight', {
 });
 
 globalStyle('body', {
+  padding: '1em',
   fontFamily: vars.font.main,
   lineHeight: vars.font.lineHeight,
   backgroundColor: vars.colour.background,
