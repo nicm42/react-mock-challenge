@@ -12,4 +12,7 @@ export const vars = createGlobalTheme(':root', {
     accent: 'ShadowsIntoLight',
     lineHeight: '1.2',
   },
+  cardPadding: {
+    padding: '1em',
+  },
 });

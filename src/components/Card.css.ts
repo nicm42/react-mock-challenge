@@ -2,8 +2,10 @@ import { style } from '@vanilla-extract/css';
 import { vars } from '../vars.css';
 
 export const cardStyle = style({
+  display: 'flex',
+  flexDirection: 'column',
   backgroundColor: vars.colour.white,
-  border: '1px solid black',
+  border: '1px solid grey', // TODO make this a box shadow rather than a border
 });
 
 export const cardImage = style({
@@ -13,7 +15,9 @@ export const cardImage = style({
 });
 
 export const cardText = style({
-  padding: '1em',
+  paddingInline: vars.cardPadding.padding,
+  paddingTop: vars.cardPadding.padding,
+  flexGrow: '1',
 });
 
 export const cardName = style({
@@ -32,6 +36,11 @@ export const cardInfo = style({
 
 export const cardBreed = style({
   listStyleType: 'none',
+});
+
+export const cardLink = style({
+  paddingInline: vars.cardPadding.padding,
+  paddingBottom: vars.cardPadding.padding,
 });
 
 export const cardAge = style({

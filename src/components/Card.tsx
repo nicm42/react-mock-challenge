@@ -25,6 +25,9 @@ const Card = ({ Cat }: CatProps) => {
         </ul>
         <p className="card-description">{Cat.description}</p>
       </div>
+      <a href="#" className={style.cardLink}>
+        More information
+      </a>
     </div>
   );
 };
