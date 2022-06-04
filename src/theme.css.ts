@@ -13,14 +13,14 @@ globalFontFace('Ubuntu', {
   // src: 'local(./fonts/Ubuntu-Regular.ttf)',
   // src: 'url(./fonts/Ubuntu-Regular.ttf)',
   // src: "local('Ubuntu-Regular'), url(./fonts/Ubuntu-Regular.ttf)",
-  src: 'local("Ubuntu-Regular"), url(@/fonts/Ubuntu-Regular.ttf) format("truetype")',
+  src: 'local("Ubuntu-Regular"), url(fonts/Ubuntu-Regular.ttf) format("truetype")',
 });
 
 globalFontFace('ShadowsIntoLight', {
   // src: 'local(./fonts/ShadowsIntoLightTwo-Regular.ttf)',
   // src: 'url(./fonts/ShadowsIntoLightTwo-Regular.ttf)',
   // src: "local('ShadowsIntoLightTwo-Regular'), url(./fonts/ShadowsIntoLightTwo-Regular.ttf)",
-  src: 'local("ShadowsIntoLightTwo-Regular"), url(@/fonts/ShadowsIntoLightTwo-Regular.ttf) format("truetype")',
+  src: 'local("ShadowsIntoLightTwo-Regular"), url(fonts/ShadowsIntoLightTwo-Regular.ttf) format("truetype")',
 });
 
 export const vars = createGlobalTheme(':root', {
