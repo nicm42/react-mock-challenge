@@ -40,5 +40,6 @@ export const cardAge = style({
   '::before': {
     position: 'absolute',
     content: '•',
+    left: '-0.25em',
   },
 });
