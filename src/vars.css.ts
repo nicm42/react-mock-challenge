@@ -4,8 +4,10 @@ export const vars = createGlobalTheme(':root', {
   colour: {
     text: '#000000',
     white: '#ffffff',
-    accent: '#6c3483',
-    background: '#fcf3cf',
+    accentH: '283',
+    accentS: '43%',
+    accentL: '36%',
+    background: 'hsl(48, 88%, 90%)',
   },
   font: {
     main: 'Ubuntu',

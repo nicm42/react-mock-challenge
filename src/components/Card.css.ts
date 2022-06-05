@@ -24,7 +24,7 @@ export const cardName = style({
   fontFamily: vars.font.accent,
   fontSize: '1.5rem',
   lineHeight: '1',
-  color: vars.colour.accent,
+  color: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, ${vars.colour.accentL})`,
 });
 
 export const cardInfo = style({
@@ -39,8 +39,23 @@ export const cardBreed = style({
 });
 
 export const cardLink = style({
-  paddingInline: vars.cardPadding.padding,
-  paddingBottom: vars.cardPadding.padding,
+  marginInline: vars.cardPadding.padding,
+  marginTop: `calc(${vars.cardPadding.padding} + 0.5em)`,
+  marginBottom: vars.cardPadding.padding,
+  backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, ${vars.colour.accentL})`,
+  padding: '1em 0.5em',
+  color: vars.colour.white,
+  textAlign: 'center',
+  textDecoration: 'none',
+  ':hover': {
+    backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, calc(${vars.colour.accentL} * 0.8))`,
+  },
+  ':focus': {
+    backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, calc(${vars.colour.accentL} * 0.8))`,
+  },
+  ':active': {
+    backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, calc(${vars.colour.accentL} * 0.8))`,
+  },
 });
 
 export const cardAge = style({
