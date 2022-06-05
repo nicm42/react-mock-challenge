@@ -5,7 +5,7 @@ export const cardStyle = style({
   display: 'flex',
   flexDirection: 'column',
   backgroundColor: vars.colour.white,
-  border: '1px solid grey', // TODO make this a box shadow rather than a border
+  boxShadow: '0.25em 0.25em 0.5em 0 rgba(0,0,0,0.25)',
 });
 
 export const cardImage = style({
