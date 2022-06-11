@@ -15,3 +15,7 @@ export const cardsStyle = style([
     gap: '1rem',
   },
 ]);
+
+export const headerStyle = style({
+  textAlign: 'center',
+});
