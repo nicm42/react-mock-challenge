@@ -4,11 +4,11 @@ import * as style from './App.css';
 
 const App = () => {
   return (
-    <div className={style.cardsStyle}>
+    <section className={style.cardsStyle}>
       {cats.map((cat) => (
         <Card Cat={cat} key={cat.name} />
       ))}
-    </div>
+    </section>
   );
 };
 

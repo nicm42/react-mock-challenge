@@ -14,7 +14,7 @@ interface CatProps {
 
 const Card = ({ Cat }: CatProps) => {
   return (
-    <div className={style.cardStyle}>
+    <article className={style.cardStyle}>
       <img className={style.cardImage} src={Cat.url} alt={Cat.description} />
       <div className={style.cardText}>
         <h2 className={style.cardName}>{Cat.name}</h2>
@@ -28,7 +28,7 @@ const Card = ({ Cat }: CatProps) => {
       <a href="#" className={style.cardLink}>
         More information
       </a>
-    </div>
+    </article>
   );
 };
 
