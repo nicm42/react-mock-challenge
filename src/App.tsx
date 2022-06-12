@@ -8,11 +8,13 @@ const App = () => {
       <header>
         <h1 className={style.headerStyle}>Cats</h1>
       </header>
-      <section className={style.cardsStyle}>
-        {cats.map((cat) => (
-          <Card Cat={cat} key={cat.name} />
-        ))}
-      </section>
+      <main>
+        <section className={style.cardsStyle}>
+          {cats.map((cat) => (
+            <Card Cat={cat} key={cat.name} />
+          ))}
+        </section>
+      </main>
     </>
   );
 };

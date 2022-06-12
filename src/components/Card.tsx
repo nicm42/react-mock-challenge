@@ -20,8 +20,9 @@ const Card = ({ Cat }: CatProps) => {
         <h2 className={style.cardName}>{Cat.name}</h2>
         <ul className={style.cardInfo}>
           <li className={style.cardBreed}>{Cat.breed}</li>
-          <li className={style.cardAge}></li>
-          {Cat.age} {Cat.age === 1 ? ' year' : 'years'}
+          <li className={style.cardAge}>
+            {Cat.age} {Cat.age === 1 ? ' year' : 'years'}
+          </li>
         </ul>
         <p className="card-description">{Cat.description}</p>
       </div>
