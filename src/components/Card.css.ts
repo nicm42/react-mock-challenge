@@ -16,7 +16,7 @@ export const cardImage = style({
 
 export const cardText = style({
   paddingInline: vars.cardPadding.padding,
-  paddingTop: vars.cardPadding.padding,
+  paddingBlockStart: vars.cardPadding.padding,
   flexGrow: '1',
 });
 
@@ -38,10 +38,21 @@ export const cardBreed = style({
   listStyleType: 'none',
 });
 
+export const cardAge = style({
+  listStyleType: 'none',
+  position: 'relative',
+  paddingInlineStart: '1em',
+  '::before': {
+    position: 'absolute',
+    content: '•',
+    insetInlineStart: '-0.25em',
+  },
+});
+
 export const cardLink = style({
   marginInline: vars.cardPadding.padding,
-  marginTop: `calc(${vars.cardPadding.padding} + 0.5em)`,
-  marginBottom: vars.cardPadding.padding,
+  marginBlockStart: `calc(${vars.cardPadding.padding} + 0.5em)`,
+  marginBlockEnd: vars.cardPadding.padding,
   backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, ${vars.colour.accentL})`,
   padding: '1em 0.5em',
   color: vars.colour.white,
@@ -55,15 +66,5 @@ export const cardLink = style({
   },
   ':active': {
     backgroundColor: `hsl(${vars.colour.accentH}, ${vars.colour.accentS}, calc(${vars.colour.accentL} * 0.8))`,
-  },
-});
-
-export const cardAge = style({
-  listStyleType: 'none',
-  position: 'relative',
-  '::before': {
-    position: 'absolute',
-    content: '•',
-    left: '-0.25em',
   },
 });
