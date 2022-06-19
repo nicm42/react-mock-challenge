@@ -38,7 +38,7 @@ I started this before watching the video, then watched it to see if there was an
 
 ## Setup
 
-To view this project, download the files, open a terminal in that folder and install locally using npm:
+To view this project, visit the [demo](https://react-mock-challenge.pages.dev/) download the files, open a terminal in that folder and install locally using npm:
 
 ```
 npm install
