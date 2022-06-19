@@ -29,6 +29,7 @@ TBC
 - TypeScript
 - Vanilla Extract
 - Vite
+- Jest
 
 ## Learnings
 
