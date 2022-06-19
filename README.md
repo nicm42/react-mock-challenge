@@ -52,7 +52,7 @@ npm run dev
 
 ## Status
 
-Project is: _in progress_
+Project is: _finished_
 
 ## Inspiration
 
